@@ -1,0 +1,153 @@
+.card-link {
+  color: black;
+  &:hover {
+    text-decoration: none;
+    color: #1d2124;
+    text-shadow: -2px 2px 2px lightgray;
+    img {
+      box-shadow: -5px 5px 5px lightgray;
+    }
+  }
+  img {
+    border-radius: 100%;
+  }
+  a {
+    color: black;
+  }
+
+}
+
+#sidebar-wrapper {
+  top: 80px;
+  left: -200px;
+  width: 200px;
+  background-color: #17a2b8;
+  color: white;
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 5px;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  list-style: none;
+  li {
+    text-indent: 20px;
+    line-height: 50px;
+    &:active, &:focus {
+      text-decoration: none;
+    }
+    ul{
+      list-style:none;
+      li{
+        a {
+          color: white;
+          display: block;
+          text-decoration: none;
+          &:hover {
+            background: rgba(255, 255, 255, 0.25);
+            color: white;
+            text-decoration: none;
+          }
+
+        }
+      }
+    }
+    a {
+      color: white;
+      display: block;
+      text-decoration: none;
+      &:hover {
+        background: rgba(255, 255, 255, 0.25);
+        color: white;
+        text-decoration: none;
+      }
+      &:active, &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#sidebar-wrapper.sidebar-toggle {
+  transition: all 0.3s ease-out;
+  margin-left: -200px;
+}
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper.sidebar-toggle {
+    transition: 0s;
+    left: 200px;
+  }
+  #content{
+    margin-left: 190px;
+    margin-bottom: 80px;
+  }
+}
+
+.pdfdownload {
+  width: 250px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: darkgray;
+  color: white;
+  text-decoration: none; /*remove underline */
+  font-size: 0.9em;
+  text-align: center;
+  text-indent: 18px;
+  &:hover{
+    background-color: mediumaquamarine ;
+  }
+  &:before, &:after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+  }
+  &:before{
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px; /* line below the arrow */
+  }
+  &:after{
+    margin-left: 3px;
+    margin-top: -9px;
+    border-style: solid;
+    border-width: 8px 4px 8 4px;/* arrow dimensions */
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 1.5s linear infinite;
+    animation-play-state: running;
+  }
+}
+
+@keyframes downloadArrow {
+
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+
+  0.001% {
+    margin-top: -15px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 0;
+  }
+}
