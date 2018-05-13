@@ -288,7 +288,7 @@ static
             @endif
                 <div class="row">
                     <div class="d-flex justify-content-start">
-                        <a id="next" class="btn btn-outline-primary" href="/">Back</a>
+                        <a id="next" class="btn btn-outline-primary" href="/">Home</a>
                     </div>
                     <div class="ml-auto justify-content-end">
                         <a id="next" class="btn btn-outline-primary" href="/php">Next</a>

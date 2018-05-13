@@ -20,11 +20,18 @@
         <div class="card card-body p-5">
             <section id="what-is-was">
                 <h3>What is Web Application Security (WAS)?</h3>
-                <p>If you frequently order food through the website of , you’re probably disappointed to have seen the
-                    picture below when you opened their website to order .</p>
+                <p>WAS is a security on websites, applications and web services. WAS was basically based on
+                    applications but was later then applied to the internet and its web systems.</p>
             </section>
             <hr>
             <section id="sample-case">
+                <p>If you frequently order food through the website of <img src="{{asset('storage/img/jollibee.jpg')
+                }}" alt="Jollibee">, you’re probably disappointed to have seen the picture below when you opened their
+                    website to order <img src="{{asset('storage/img/burger.png')}}" alt=""><img src="{{asset
+                    ('storage/img/coke.jpg')}}" alt=""><img src="{{asset('storage/img/fries.png')}}" alt="">.</p>
+                <img src="{{ asset('storage/img/jolli-web.PNG') }}" alt="Jollibee Website"
+                     class="img-fluid justify-content-center">
+                <hr>
                 <h3>Sample Case</h3>
                 <p>If you frequently order food from jollibeedelivery.com which the official website of Jollibee you’re
                     probably disappointed to have seen the picture below when you opened their website to order
@@ -51,12 +58,22 @@
             </section>
             <hr>
             <section id="data-pri-act">
-                <img src="{{ asset('storage/img/dataprin.png') }}">
-                <p>The Data Privacy Act was enforced in order to ensure the presence of security in web applications.
+                <img src="{{ asset('storage/img/dataprin.png') }}" class="img-fluid">
+                <p class="m-5">The Data Privacy Act was enforced in order to ensure the presence of security in web
+                    applications.
                 </p>
             </section>
             <hr>
             <section id="top-10">
+                <div class="jumbotron">
+                    <strong>Note :</strong>
+                    <p><img src="{{asset('storage/img/smiley.png')}}" alt=""></p>
+                    <p>
+                        For this lesson, we will be focusing on 3 web application security. The remaining security risks
+                        will be covered soon. Come back after a week if you want to know more about the reamining
+                        security risk.
+                    </p>
+                </div>
                 <h3>Top 10 Open Web Application Security Project (OWASP) 2k17</h3>
                 <ul>
 
@@ -89,20 +106,33 @@
                     unencrypted user data are transmitted to servers. Functions such as the Reset or Forgot Password are
                     mostly exploited in this vulnerability, and are used by the attacker in order to retrieve the
                     details of an account. </p>
-
                 <b>Mitigation Tips</b>
-                <ol>
-
-                    <li>Setting strong passwords at least eight characters long with the use of special characters and
-                        uppercase letters. Temporarily deny login service if there were too many failed attempts.
-                    </li>
-                    <li>Set session timeouts when there is no user activity.</li>
-                    <li>When a wrong credential is entered, there should be an output saying “Invalid password/username”
-                        instead of “Invalid password” or “Invalid username”.
-                    </li>
-                    <li>Login details should be encrypted or hashed when placed and transmitted to the database.</li>
-                    <li>When using a PC, remember to logout the account instead of just closing the web browser.</li>
-                </ol>
+                        <ol>
+                            <li>Setting strong passwords at least eight characters long with the use of special
+                                characters and
+                                uppercase letters. Temporarily deny login service if there were too many failed
+                                attempts.
+                            </li>
+                            <li>Set session timeouts when there is no user activity.</li>
+                            <li>When a wrong credential is entered, there should be an output saying “Invalid
+                                password/username”
+                                instead of “Invalid password” or “Invalid username”.
+                            </li>
+                            <li>Login details should be encrypted or hashed when placed and transmitted to the
+                                database.
+                            </li>
+                            <li>When using a PC, remember to logout the account instead of just closing the web
+                                browser.
+                            </li>
+                        </ol>
+                <div class="row p-4">
+                    <div class="col">
+                        <img src="{{asset('storage/img/brokenAuth.png')}}" alt="Broken Authentication" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="{{asset('storage/img/strongPassword.png')}}" alt="Strong Password" class="img-fluid">
+                    </div>
+                </div>
                 <b>Sample Case</b>
                 <p>
                     A case of broken authentication occurred between October and December 2015, where nearly 9,000 user
@@ -142,6 +172,10 @@
                         of using them, then there should be restricted use.
                     </li>
                 </ol>
+                <div class="col">
+                    <img src="{{asset('storage/img/InsufficientLogging.png')}}" alt="Insufficient Logging m-4"
+                         class="img-fluid">
+                </div>
                 <b>Sample Case</b>
                 <p>One particular case involving this security risk involves a hacking incident that happened on a
                     blogging website used by Thomson Reuters. Damages to the blog site includes false posts, which
