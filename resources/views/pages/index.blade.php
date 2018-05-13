@@ -27,7 +27,7 @@
         </div>
         <div class="col-sm">
             <a class="card-link" href="{{ route('was') }}">
-                <img class="card-img-top" src="{{asset('storage/img/was.png')}}" alt="Node JS">
+                <img class="card-img-top" src="{{asset('storage/img/was.png')}}" alt="WAS">
                 <div class="card-body text-center">
                     <h1 class="card-title">WAS</h1>
                 </div>

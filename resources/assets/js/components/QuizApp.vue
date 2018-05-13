@@ -3,7 +3,7 @@
         <div v-if="introStage">
             <slot name="intro" :title="title">
             </slot>
-            <button @click="startQuiz">START!</button>
+            <button @click="startQuiz" class="btn btn-dark">START!</button>
         </div>
 
         <div v-if="questionStage">

@@ -21,3 +21,6 @@ Auth::routes();
 Route::resource('quizzes', 'QuizController');
 Route::resource('quizzesTaken', 'QuizzesTakenController');
 Route::resource('profile', 'ProfileController');
+
+Route::resource('{topic}', 'CommentsController');
+Route::post('{topic}', ['uses' => 'CommentsController@store', 'as' => 'comments.store']);

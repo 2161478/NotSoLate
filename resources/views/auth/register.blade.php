@@ -42,6 +42,7 @@
                     <button type="submit" class="btn btn-info btn-block submit">
                         {{ __('Register') }}
                     </button>
+                    {!! app('captcha')->render(); !!}
                 </form>
             </div>
         </div>

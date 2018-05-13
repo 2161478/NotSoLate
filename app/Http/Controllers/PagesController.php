@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\User;
+use Illuminate\Support\Facades\DB;
 
 class PagesController extends Controller
 {
@@ -15,19 +16,19 @@ class PagesController extends Controller
         return view('pages.profile')-> with('quiz', $user->quizTaken);
     }
     public function java() {
-        $title = 'Java';
-        return view('pages.java')-> with('title', $title);
+        $comments = DB::select("select * from comments where topic = 'java' order by 'created_at' asc");
+        return view('pages.java')-> with('comments', $comments);
     }
     public function was() {
-        $title = 'Web Application Security';
-        return view('pages.was')-> with('title', $title);
+        $comments = DB::select("select * from comments where topic = 'was' order by 'created_at' asc");
+        return view('pages.was')-> with('comments', $comments);
     }
     public function php() {
-        $title = 'PHP';
-        return view('pages.php')-> with('title', $title);
+        $comments = DB::select("select * from comments where topic = 'php' order by 'created_at' asc");
+        return view('pages.php')-> with('comments', $comments);
     }
     public function node() {
-        $title = 'Node.Js';
-        return view('pages.node')-> with('title', $title);
+        $comments = DB::select("select * from comments where topic = 'node' order by 'created_at' asc");
+        return view('pages.node')-> with('comments', $comments);
     }
 }
