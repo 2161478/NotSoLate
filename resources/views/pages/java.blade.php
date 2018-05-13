@@ -242,58 +242,19 @@ static
             <hr>
             @if (Auth::user())
                 <div style="text-align:center">
-                    <a style="text-align:center" href="{{asset('storage/JavaNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download topic PDF file</a>
+                <a style="text-align:center" href="{{asset('storage/JavaNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download topic PDF file</a> 
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="page-header">
-                            <h1>Comments </h1>
-                        </div>
-                        <div class="comments-list">
-                            @foreach($comments as $comment)
-                                <div>
-                                    <div id="comments" class="mt-1">
-                                        <div class="media-body card mt-3" id="div-comment-2">
-                                            <div class="card-header bg-light">
-                                                <div class="flex-center">
-                                                    <h4 class="media-heading ">{{$comment->name}}</h4>
-                                                </div>
-                                            </div>
-                                            <div class="card-block">
-                                                <div class="comment-content card-text p-2">
-                                                    <p>{{$comment->comment}}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-                {!! Form::open(['route' => ['comments.store', Request::path()], 'method' => 'POST']) !!}
-                {{ Form::text('name', Auth::user()->name, ['class' => 'd-none']) }}
-                {{ Form::label('comment', 'Comment') }}
-                <div class="row">
-                    <div class="col-10">
-
-                        {{ Form::textarea('comment', '', ['class'=> 'form-control', 'rows' => '3']) }}</div>
-                    <div class="col-2">
-                        {{ Form::submit('Add Comment', ['class' => 'btn btn-primary btn-block']) }}
-                    </div>
-                </div>
-                {!! Form::close() !!}
                 <hr>
             @endif
-                <div class="row">
-                    <div class="d-flex justify-content-start">
-                        <a id="next" class="btn btn-outline-primary" href="/">Back</a>
-                    </div>
-                    <div class="ml-auto justify-content-end">
-                        <a id="next" class="btn btn-outline-primary" href="/php">Next</a>
-                    </div>
+            <div class="row">
+                <div class="d-flex justify-content-start">
+                    <a id="" class="btn btn-outline-primary" href="{{route('home')}}">Home</a>
                 </div>
+                <div class="ml-auto justify-content-end">
+                    <a id="next" class="btn btn-outline-primary" href="{{route('php')}}">Next</a>
+                </div>
+            </div>
+
         </div>
     </div>
 @endsection
