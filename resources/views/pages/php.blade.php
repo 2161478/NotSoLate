@@ -1,5 +1,4 @@
-@extends('layouts.with-navbar')
-@section('content')
+@extends('layouts.with-navbar') @section('content')
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div id="sidebar-wrapper" class="sidebar-toggle">
@@ -25,31 +24,31 @@
             <section id="introduction">
                 <h3>Introduction</h3>
                 <p>PHP, meaning <i>PHP: Hypertext Preprocessor</i> and originally named Personal Homepage, is a general
-                    purpose scripting language
-                    developed by Rasmus Lerdorf in 1994. PHP is now widely-used as a general-purpose scripting language;
-                    however, it is mostly used for back-end web development and can be embedded into HTML. It is also a
-                    server-side web scripting language, meaning it runs in a web server. The PHP script is executed
-                    first on the server, generating the HTML which is then sent to the client.
+                    purpose scripting language developed by Rasmus Lerdorf in 1994. PHP is now widely-used as a
+                    general-purpose scripting language; however, it is mostly used for back-end web development and can
+                    be embedded into HTML. It is also a server-side web scripting language, meaning it runs in a web
+                    server. The PHP script is executed first on the server, generating the HTML which is then sent to
+                    the client.
                 </p>
                 <p>It is a server-side web scripting language which means, it runs in a web server. The php script is
                     executed first on the server, generating the HTML and sent to the client.</p>
                 <p>PHP is a very popular scripting language, though not a very disciplined one as there are a lot of
                     inconsistencies in the language, such as function name, and no central organization governing the
                     development of PHP. Generally, there are 2 ways of coding: the Object Oriented and the Procedural
-                    Paradigm.</p>
+                    Paradigm.
+                </p>
             </section>
             <hr>
             <section id="basic-syntax">
                 <h3>Basic Syntax</h3>
                 <strong>PHP Tags</strong>
                 <p>When PHP parses a file, it looks for opening and closing tags: <code>&lt;?php and ?></code>. These
-                    tells the parser the
-                    beginning and end of a PHP code, and allow it to be embedded anywhere in the HTML file as well as
-                    other different documents.</p>
+                    tells the parser the beginning and end of a PHP code, and allow it to be embedded anywhere in the
+                    HTML file as well as other different documents.</p>
                 Example:
                 <pre>
 &lt;?php
-    echo “Hello Webtech People!”;
+    Echo “Hello Webtech People!”;
 &lt;/php&gt;
                     </pre>
                 <strong>Escaping from HTML</strong>
@@ -73,14 +72,14 @@
                 <h5>Predefined Variables</h5>
                 <p>Predefined variables are variables that are already defined by php. </p>
                 <p>
-                    Superglobals are built-in variables that are always available within all scopes. These are named
-                    in capital letters and starts with underscore (‘_’) after the dollar sign, with the exception of
-                    the <code>$GLOBALS</code> variable.
+                    Superglobals are built-in variables that are always available within all scopes. These are named in
+                    capital letters and starts with underscore (‘_’) after the dollar sign, with the exception of the
+                    <code>$GLOBALS</code> variable.
                 </p>
                 <table class="table table-striped table-responsive-md">
                     <thead>
-                    <td class="p-4">Variable</td>
-                    <td class="p-4">Uses</td>
+                    <td>Variable</td>
+                    <td>Uses</td>
                     </thead>
                     <tr>
                         <td><code>$GLOBAL</code></td>
@@ -138,7 +137,7 @@
                     <tr>
                         <td>Integers</td>
                         <td>
-							<pre>
+						<pre>
 &lt;?php
     $x = 8;         // decimal
     $y = -8;        // negative
@@ -151,7 +150,7 @@
                     <tr>
                         <td>Floating Point Numbers</td>
                         <td>
-							<pre>
+						<pre>
 &lt;?php
     $x = 1.5;
     $y = 1.5e5;
@@ -163,7 +162,7 @@
                     <tr>
                         <td>Strings</td>
                         <td>
-							<pre>
+						<pre>
 &lt;?php
     $hi = ‘Hello world!’;
     $hi2 = “Hello World!”;
@@ -174,7 +173,7 @@
                     <tr>
                         <td>Boolean</td>
                         <td>
-							<pre>
+						<pre>
 &lt;?php
     $isValid = true;
 ?&gt;
@@ -184,7 +183,7 @@
                     <tr>
                         <td>Arrays</td>
                         <td>
-							<pre>
+						<pre>
 &lt;?php
     $members = array(“Juan”, “Maria”, “Pedro”);
 ?&gt;
@@ -194,7 +193,7 @@
                     <tr>
                         <td>Objects</td>
                         <td>
-							<pre>
+						<pre>
 &lt;?php
 Class dog{
     public $dialogue = “Woof!”;
@@ -210,7 +209,7 @@ Class dog{
                     <tr>
                         <td>Resources</td>
                         <td>
-							<pre>
+						<pre>
 &lt;?php
     $file = fopen(“data.txt”, “r”);
     $db = mysql_connect(“localhost”, “root”, “”);
@@ -221,7 +220,7 @@ Class dog{
                     <tr>
                         <td>NULL</td>
                         <td>
-							<pre>
+						<pre>
 &lt;?php
     $empty = NULL;
 ?&gt;
@@ -235,7 +234,8 @@ Class dog{
                 <h3>Conditional Statements</h3>
                 <p>Conditional Statements in PHP are closely similar to the loops in other programming or scripting
                     languages, such as Java and JavaScript, and it has almost the same syntax as the aforementioned
-                    languages.</p>
+                    languages.
+                </p>
                 <table class="table table-responsive-md">
                     <thead>
                     <th>Construct</th>
@@ -245,14 +245,14 @@ Class dog{
                     <tr>
                         <td>if</td>
                         <td>
-                            <pre>
+						<pre>
 if(condition){
 	// code
 }
                             </pre>
                         </td>
                         <td>
-                            <pre>
+						<pre>
 &lt;?php
     $x = 1;
     if($x < 10){
@@ -265,7 +265,7 @@ if(condition){
                     <tr>
                         <td>if-else</td>
                         <td>
-                            <pre>
+						<pre>
 if(condition){
 // code if condition is satisfied
 } else{
@@ -274,7 +274,7 @@ if(condition){
                             </pre>
                         </td>
                         <td>
-                            <pre>
+						<pre>
 &lt;?php
 $x = 1;
 if($x < 10){
@@ -289,7 +289,7 @@ if($x < 10){
                     <tr>
                         <td>if-elseif-else</td>
                         <td>
-                            <pre>
+						<pre>
 if(condition1){
     // code if condition1 is satisfied
 } elseif(condition2){
@@ -300,7 +300,7 @@ if(condition1){
                             </pre>
                         </td>
                         <td>
-                            <pre>
+						<pre>
 &lt;?php
 $x = 1;
 if($x == 0){
@@ -317,7 +317,7 @@ echo "I have enough things to carry.";
                     <tr>
                         <td>Switch</td>
                         <td>
-                            <pre>
+						<pre>
 switch(n){
     case label1:
         // code when n=label1
@@ -332,7 +332,7 @@ switch(n){
                             </pre>
                         </td>
                         <td>
-                            <pre>
+						<pre>
 &lt;?php
 switch($x){
     case 1:
@@ -367,14 +367,14 @@ switch($x){
                     <tr>
                         <td>While</td>
                         <td>
-							<pre>
+						<pre>
 while(condition){
     // code
 }
 </pre>
                         </td>
                         <td>
-							<pre>
+						<pre>
 &lt; ?php
 $i = 1;
 while($i &lt;= 3){
@@ -388,14 +388,14 @@ while($i &lt;= 3){
                     <tr>
                         <td>For</td>
                         <td>
-							<pre>
+						<pre>
 for(initialization; condition; increment){
 	 // code
 }
 </pre>
                         </td>
                         <td>
-							<pre>
+						<pre>
 &lt;?php
 for($i=1; $i&lt;=3; $i++){
     echo $i . "&lt;br&gt;";
@@ -407,14 +407,14 @@ for($i=1; $i&lt;=3; $i++){
                     <tr>
                         <td>Foreach</td>
                         <td>
-							<pre>
+						<pre>
 foreach($array as $var){
     // code
 }
 </pre>
                         </td>
                         <td>
-							<pre>
+						<pre>
 &lt;?php
 $numbers = array(1, 2, 3);
 foreach($numbers as $value){
@@ -427,14 +427,14 @@ foreach($numbers as $value){
                     <tr>
                         <td>Do-while</td>
                         <td>
-							<pre>
+						<pre>
 do{
     // code
 }while(condition);
 </pre>
                         </td>
                         <td>
-							<pre>
+						<pre>
 &lt;?php
 $i = 1;
 do{
@@ -464,14 +464,14 @@ while($i &lt;= 3);
                     </thead>
                     <tr>
                         <td>
-								<pre>
+						<pre>
 function funcName(){
     //code to be executed
 }
 </pre>
                         </td>
                         <td>
-								<pre>
+						<pre>
 function sayHello(){
     echo "Hello dear user!";
 }
@@ -490,14 +490,14 @@ function sayHello(){
                     </thead>
                     <tr>
                         <td>
-								<pre>
+						<pre>
 function funcName($param1, $param2){
 	// code to be executed
 }
 </pre>
                         </td>
                         <td>
-								<pre>
+						<pre>
 function multiply($factor1, $factor2){
     $product = $factor1 * $factor2;
     return $sum;
@@ -517,16 +517,16 @@ function multiply($factor1, $factor2){
                     </tr>
                     <tr>
                         <td>
-								<pre>
+						<pre>
 function funcName($param1, $param2){
 	// code to be executed
 }
 </pre>
                         </td>
                         <td>
-								<pre>
+						<pre>
 function incrementBy($num1, $incrementNum2=1){
-    $result = $num1 + $num2;
+    $result = $num1 + $num22;
     return $result;
 }
 
@@ -566,8 +566,8 @@ function incrementBy($num1, $incrementNum2=1){
                     <tr>
                         <td><code>E_WARNING</code></td>
                         <td>2</td>
-                        <td>A non-fatal run-time error where most errors fall into this
-                            category. This, however, doesn’t does not the execution of the script.
+                        <td>A non-fatal run-time error where most errors fall into this category. This, however, doesn’t
+                            does not the execution of the script.
                         </td>
                     </tr>
                     <tr>
@@ -581,8 +581,8 @@ function incrementBy($num1, $incrementNum2=1){
                     <tr>
                         <td><code>E_STRICT</code></td>
                         <td>2048</td>
-                        <td> Although this is not strictly an error, it is triggered when PHP
-                            encounters any code that may cause future problems or forward incompatibilities.
+                        <td> Although this is not strictly an error, it is triggered when PHP encounters any code that
+                            may cause future problems or forward incompatibilities.
                         </td>
                     </tr>
                     <tr>
@@ -639,10 +639,10 @@ if(file_exists("dummy.txt")){
                 <br/> Example:
                 <pre>
 &lt;?php
-// Starting session
-session_start();
-// Storing session data
-$_SESSION["username"] = "user1";
+    // Starting session
+    session_start();
+    // Storing session data
+    $_SESSION["username"] = "user1";
 ??&gt;
                     </pre>
                 <p>
@@ -651,17 +651,17 @@ $_SESSION["username"] = "user1";
                     set to 1 or explicitly through <code>session_start()</code> respectively (php.net).
                 </p>
                 <p>
-                    To remove certain session data, you can simply use the unset function with the corresponding key
-                    of the <code>$_SESSION</code> array.
+                    To remove certain session data, you can simply use the unset function with the corresponding key of
+                    the <code>$_SESSION</code> array.
                 </p>
                 Example:
                 <pre>
 &lt;?php
-// Starting session
-session_start();
-// Removing session data
-if(isset($_SESSION["username"])){
-    unset($_SESSION["username"]);
+    // Starting session
+    session_start();
+    // Removing session data
+    if(isset($_SESSION["username"])){
+        unset($_SESSION["username"]);
 }
 ?&gt;
                 </pre>
@@ -686,33 +686,38 @@ session_destroy();
             </section>
             <hr>
             <div class="container">
-                <button id="references" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Reference</button>
-                    <div id="demo" class="collapse">
-                    
-                <li>MDN Web Docs. (2018). HTTP cookies. [online] Available at:
-                https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies [Accessed 11 May 2018].<br> 
-                <li>Morris, J. (2018).How to Build a PHP Login Form Using Sessions - John Morris. [online] John Morris. Available at:
-                https://www.johnmorrisonline.com/build-php-login-form-using-sessions/ [Accessed 11 May 2018].<br>
-                <li>Php.net. (2018). PHP: Introduction - Manual. [online] Available at:
-                http://php.net/manual/en/intro.session.php [Accessed 11 May 2018].<br> 
-                <li>Tutorialrepublic.com. (2018). How to Create, Access and Destroy Sessions in PHP - Tutorial Republic. [online] Available at:
-                https://www.tutorialrepublic.com/php-tutorial/php-sessions.php [Accessed 11 May 2018].<br>
-                <li>Tutorialrepublic.com. (2018). PHP If, Else and Elseif Conditional Statements - Tutorial Republic.
-                [online] Available at: https://www.tutorialrepublic.com/php-tutorial/php-if-else-statements.php
-                [Accessed 11 May 2018]. <br> 
-                <li>Tutorialrepublic.com. (2018). PHP Switch Case Conditional Statements -
-               Tutorial Republic. [online] Available at:
-                https://www.tutorialrepublic.com/php-tutorial/php-switch-case-statements.php [Accessed 11 May 2018].<br>
-                <li>Tutorialrepublic.com. (2018). PHP While, Do-While, For and Foreach Loops - Tutorial Republic. [online]
-                Available at: https://www.tutorialrepublic.com/php-tutorial/php-loops.php [Accessed 11 May 2018].<br>
-            
-                    </div>
+                <button id="references" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">
+                    View Reference
+                </button>
+                <div id="demo" class="collapse">
+
+                    MDN Web Docs. (2018). HTTP cookies. [online] Available at:
+                    https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies [Accessed 11 May 2018].<br>
+                    Morris, J. (2018).How to Build a PHP Login Form Using Sessions - John Morris. [online] John Morris.
+                    Available at:
+                    https://www.johnmorrisonline.com/build-php-login-form-using-sessions/ [Accessed 11 May 2018].<br>
+                    Php.net. (2018). PHP: Introduction - Manual. [online] Available at:
+                    http://php.net/manual/en/intro.session.php [Accessed 11 May 2018].<br>
+                    Tutorialrepublic.com. (2018). How to Create, Access and Destroy Sessions in PHP - Tutorial Republic.
+                    [online] Available at:
+                    https://www.tutorialrepublic.com/php-tutorial/php-sessions.php [Accessed 11 May 2018].<br>
+                    Tutorialrepublic.com. (2018). PHP If, Else and Elseif Conditional Statements - Tutorial Republic.
+                    [online] Available at: https://www.tutorialrepublic.com/php-tutorial/php-if-else-statements.php
+                    [Accessed 11 May 2018]. <br>
+                    Tutorialrepublic.com. (2018). PHP Switch Case Conditional Statements -
+                    Tutorial Republic. [online] Available at:
+                    https://www.tutorialrepublic.com/php-tutorial/php-switch-case-statements.php [Accessed 11 May 2018].<br>
+                    Tutorialrepublic.com. (2018). PHP While, Do-While, For and Foreach Loops - Tutorial Republic.
+                    [online]
+                    Available at: https://www.tutorialrepublic.com/php-tutorial/php-loops.php [Accessed 11 May
+                    2018].<br>
+
                 </div>
-            <hr>
-            @if (Auth::user())
+            </div>
+            <hr> @if (Auth::user())
                 <div style="text-align:center">
                     <a style="text-align:center" href="{{asset('storage/PHPNotes.pdf')}}" class="pdfdownload"
-                       download="JavaNotes.pdf">Download topic PDF file</a>
+                       download="PHPNotes.pdf">Download topic PDF file</a>
                 </div>
                 <hr>
                 <div class="row">
@@ -742,9 +747,7 @@ session_destroy();
                         </div>
                     </div>
                 </div>
-                {!! Form::open(['route' => ['comments.store', Request::path()], 'method' => 'POST']) !!}
-                {{ Form::text('name', Auth::user()->name, ['class' => 'd-none']) }}
-                {{ Form::label('comment', 'Comment') }}
+                {!! Form::open(['route' => ['comments.store', Request::path()], 'method' => 'POST']) !!} {{ Form::text('name', Auth::user()->name, ['class' => 'd-none']) }} {{ Form::label('comment', 'Comment') }}
                 <div class="row">
                     <div class="col-10">
 
@@ -753,15 +756,13 @@ session_destroy();
                         {{ Form::submit('Add Comment', ['class' => 'btn btn-primary btn-block']) }}
                     </div>
                 </div>
-                {!! Form::close() !!}
-                <hr>
-            @endif
+                {!! Form::close() !!} @endif
             <div class="row">
                 <div class="d-flex justify-content-start">
-                    <a id="next" class="btn btn-outline-primary" href="/java">Back</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/java') }}">Back</a>
                 </div>
                 <div class="ml-auto justify-content-end">
-                    <a id="next" class="btn btn-outline-primary" href="/node">Next</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/node') }}">Next</a>
                 </div>
             </div>
         </div>

@@ -10677,6 +10677,71 @@ html .footer .footer-block {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+.cid-qRL1tBino6 {
+  background-color: inherit;
+}
+
+.cid-qRL1tBino6 .mbr-section-subtitle {
+  color: #767676;
+  font-weight: 300;
+}
+
+.cid-qRL1tBino6 .media-container-row {
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-align-items: stretch;
+}
+
+.cid-qRL1tBino6 .card_cont {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  background-color: inherit;
+}
+
+.cid-qRL1tBino6 .card-front {
+  z-index: 2;
+}
+
+.cid-qRL1tBino6 .card_back {
+  min-height: 230px;
+  z-index: 1;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.cid-qRL1tBino6 .card {
+  min-height: 230px;
+}
+
+.cid-qRL1tBino6 .card:hover .card-front {
+  z-index: 1;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.cid-qRL1tBino6 .card:hover .card_back {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.cid-qRL1tBino6 .builderCard .card_cont {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
 .form-container {
   position: relative;
   width: 300px;
@@ -10877,78 +10942,3 @@ html .footer .footer-block {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-
-.cid-qRL1tBino6 {
-  background-color: inherit;
-}
-.cid-qRL1tBino6 .mbr-section-subtitle {
-  color: #767676;
-  font-weight: 300;
-}
-.cid-qRL1tBino6 .media-container-row {
-  word-wrap: break-word;
-  word-break: break-word;
-  align-items: stretch;
-  -webkit-align-items: stretch;
-}
-.cid-qRL1tBino6 .card_cont {
-  -o-transition: all .5s;
-  -ms-transition: all .5s;
-  -moz-transition: all .5s;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  -o-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  text-align: center;
-  background-color: inherit;
-}
-.cid-qRL1tBino6 .card-front {
-  z-index: 2;
-}
-
-.cid-qRL1tBino6 .card_back {
-	min-height: 230px;
-  z-index: 1;
-  margin: 0;
-  text-align: center;
-  overflow: hidden;
-  -o-transform: rotateY(-180deg);
-  -ms-transform: rotateY(-180deg);
-  -moz-transform: rotateY(-180deg);
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-}
-.cid-qRL1tBino6 .card {
-  min-height: 230px;
-}
-
-.cid-qRL1tBino6 .card:hover .card-front {
-  z-index: 1;
-  -o-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-.cid-qRL1tBino6 .card:hover .card_back {
-  z-index: 2;
-  -o-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
-
-.cid-qRL1tBino6 .builderCard .card_cont {
-  -o-backface-visibility: hidden;
-  -ms-backface-visibility: hidd;
-  -moz-backface-visibility: visible;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}

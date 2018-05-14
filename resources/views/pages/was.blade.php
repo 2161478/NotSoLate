@@ -1,5 +1,4 @@
-@extends('layouts.with-navbar')
-@section('content')
+@extends('layouts.with-navbar') @section('content')
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div id="sidebar-wrapper" class="sidebar-toggle">
@@ -7,11 +6,11 @@
                     <li><a href="#what-is-was" class="left-nav-link">What is WAS?</a></li>
                     <li><a href="#sample-case">Sample Case</a></li>
                     <li><a href="#data-pri-act">Data Privacy Act</a></li>
-                    <li><a href="#was">Web Application Security (WAS)</a></li>
+                    <li><a href="#was">Web Application Security</a></li>
                     <li><a href="#bA">Broken Authentication</a></li>
                     <li><a href="#bb">Using Components with Known Vulnerabilities</a></li>
                     <li><a href="#bc">Insufficient Logging & Monitoring</a></li>
-                    <li><a href="#xss">Cross-Site Scripting</a></li>
+                    <li><a href="xss">Cross-Site Scripting</a></li>
                     <li><a href="#references">References</a></li>
                 </ul>
             </div>
@@ -21,12 +20,12 @@
         <div class="card card-body p-5">
             <section id="what-is-was">
                 <h3>What is Web Application Security (WAS)?</h3>
-                <p>WAS is a security on websites, applications and web services. WAS was basically based on
-                    applications but was later then applied to the internet and its web systems.</p>
+                <p>WAS is a security on websites, applications and web services. WAS was basically based on applications
+                    but was later then applied to the internet and its web systems.</p>
             </section>
             <hr>
             <section id="sample-case">
-                <p>If you frequently order food through the website of <img src="{{asset('storage/img/jollibee.png')
+                <p>If you frequently order food through the website of <img src="{{asset('storage/img/jollibee.jpg')
                 }}" alt="Jollibee">, you’re probably disappointed to have seen the picture below when you opened their
                     website to order <img src="{{asset('storage/img/burger.png')}}" alt=""><img src="{{asset
                     ('storage/img/coke.jpg')}}" alt=""><img src="{{asset('storage/img/fries.png')}}" alt="">.</p>
@@ -35,9 +34,9 @@
                 <hr>
                 <h3>Sample Case</h3>
                 <p>If you frequently order food from jollibeedelivery.com which the official website of Jollibee you’re
-                    probably disappointed to have seen the picture below when you opened their website to order
-                    food.</p>
-                <img src="{{ asset('storage/img/jolli.JPG') }}" class="img-fluid d-block">
+                    probably disappointed to have seen the picture below when you opened their website to order food.
+                </p>
+                <img src="{{ asset('storage/img/jolli.JPG') }}" class="img-fluid">
                 <br>
                 <i>Image by: ABS-CBN</i>
                 <br>
@@ -59,7 +58,7 @@
             </section>
             <hr>
             <section id="data-pri-act">
-                <img src="{{ asset('storage/img/dataprivacy.png') }}" class="img-fluid d-block">
+                <img src="{{ asset('storage/img/dataprin.png') }}" class="img-fluid">
                 <p class="m-5">The Data Privacy Act was enforced in order to ensure the presence of security in web
                     applications.
                 </p>
@@ -88,15 +87,15 @@
                 <h4>Top 10 Open Web Application Security Project (OWASP) 2k17</h4>
                 <ul>
                     <li> A1 - Injection</li>
-                    <li><a href="#bA">A2 -Broken Authentication</a></li>
+                    <li><b> A2 – Broken Authentication and Session Management</b></li>
                     <li>A3 – 2017-Sensitive Data Exposure</li>
                     <li>A4 – XML External Entities (XXE)</li>
                     <li>A5 – Broken Access Control</li>
                     <li> A6 – Security Misconfiguration</li>
-                    <li><a href="#xss">A7 –Cross-Site Scripting</a></li>
+                    <li><b>A7 – Cross-Site Scripting (XSS)</b></li>
                     <li>A8 – Insecure Deserialization</li>
-                    <li><a href="#bb">A9 –Using Components with Known Vulnerabilities</a></li>
-                    <li><a href="#bc">A10 –Insufficient Logging & Monitoring</a></li>
+                    <li><b>A9 – Using Components with Known Vulnerabilities</b></li>
+                    <li><b>A10 –Insufficient Logging & Monitoring</b></li>
                 </ul>
                 <div class="jumbotron">
                     <strong>Note :</strong>
@@ -127,21 +126,16 @@
                 </p>
                 <b>Mitigation Tips</b>
                 <ol>
-                    <li>Setting strong passwords at least eight characters long with the use of special
-                        characters and
-                        uppercase letters. Temporarily deny login service if there were too many failed
-                        attempts.
+                    <li>Setting strong passwords at least eight characters long with the use of special characters and
+                        uppercase letters. Temporarily deny login service if there were too many failed attempts.
                     </li>
                     <li>Set session timeouts when there is no user activity.</li>
-                    <li>When a wrong credential is entered, there should be an output saying “Invalid
-                        password/username”
+                    <li>When a wrong credential is entered, there should be an output saying “Invalid password/username”
                         instead of “Invalid password” or “Invalid username”.
                     </li>
-                    <li>Login details should be encrypted or hashed when placed and transmitted to the
-                        database.
+                    <li>Login details should be encrypted or hashed when placed and transmitted to the database.
                     </li>
-                    <li>When using a PC, remember to logout the account instead of just closing the web
-                        browser.
+                    <li>When using a PC, remember to logout the account instead of just closing the web browser.
                     </li>
                 </ol>
                 <div class="row p-4">
@@ -192,8 +186,8 @@
                 <ol>
                     <li>Proper management of all dependencies and libraries are required</li>
                     <li>Components should be analyzed for insecure codes (such as codes unintentionally allowing users
-                        to access private files or even sensitve compueter processes)
-                        remove or update old library components that may potentially be vulnerable
+                        to access private files or even sensitve compueter processes) remove or update old library
+                        components that may potentially be vulnerable
                     </li>
                     <li> All components and/or sources should be checked for approved licenses ( indicate that they have
                         already been reviewed for security)
@@ -251,8 +245,8 @@
                         within the application.
                     </li>
                     <li>
-                        Alerts concerning suspicious activities must be ensured that they are effective enough and
-                        that an incident response and recovery plan is well established
+                        Alerts concerning suspicious activities must be ensured that they are effective enough and that
+                        an incident response and recovery plan is well established
                     </li>
                     <li>
                         A penetration test must also be conducted wherein the system will be tested if it successfully
@@ -305,26 +299,26 @@
                 </ul>
                 <b>Sample Case</b>
                 <p>
-                    One of the most famous cases of XSS is the Samy Worm created by Samy Kamkar for MySpace. Samy created
-                    a script that would force users who visited his profile to add him as a friend, and add “but most of
-                    all, Samy is my hero” under the “my heroes” category. He programmed the script such that it would
-                    copy itself to the visitors’ profile as well.
+                    One of the most famous cases of XSS is the Samy Worm created by Samy Kamkar for MySpace. Samy
+                    created a script that would force users who visited his profile to add him as a friend, and add “but
+                    most of all, Samy is my hero” under the “my heroes” category. He programmed the script such that it
+                    would copy itself to the visitors’ profile as well.
                 </p>
             </section>
             <hr>
             <div class="container">
-                <button id="references" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Reference</button>
-                    <div id="demo" class="collapse">
-                    <section >
-                        <li>ABS-CBN News. Available at:
-                http://news.abs-cbn.com/business/05/09/18/jollibee-takes-down-delivery-website-after-govt-raises-privacy-concern
-                [Accessed 11 May 2018].<br/>
-                        <li>Owasp.org. (2018). Top 10-2017 Top 10 - OWASP. [online] Available at:
-                https://www.owasp.org/index.php/Top_10-2017_Top_10 [Accessed 11 May 2018]<br/>
-                    </div>
+                <button id="references" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">
+                    View Reference
+                </button>
+                <div id="demo" class="collapse">
+                    ABS-CBN News. Available at:
+                    http://news.abs-cbn.com/business/05/09/18/jollibee-takes-down-delivery-website-after-govt-raises-privacy-concern
+                    [Accessed 11 May 2018].<br/>
+                    Owasp.org. (2018). Top 10-2017 Top 10 - OWASP. [online] Available at:
+                    https://www.owasp.org/index.php/Top_10-2017_Top_10 [Accessed 11 May 2018]<br/>
                 </div>
-            <hr>
-            @if (Auth::user())
+            </div>
+            <hr> @if (Auth::user())
                 <div style="text-align:center">
                     <a style="text-align:center" href="{{asset('storage/WASNotes.pdf')}}" class="pdfdownload"
                        download="WASNotes.pdf">Download topic PDF file</a>
@@ -357,9 +351,7 @@
                         </div>
                     </div>
                 </div>
-                {!! Form::open(['route' => ['comments.store', Request::path()], 'method' => 'POST']) !!}
-                {{ Form::text('name', Auth::user()->name, ['class' => 'd-none']) }}
-                {{ Form::label('comment', 'Comment') }}
+                {!! Form::open(['route' => ['comments.store', Request::path()], 'method' => 'POST']) !!} {{ Form::text('name', Auth::user()->name, ['class' => 'd-none']) }} {{ Form::label('comment', 'Comment') }}
                 <div class="row">
                     <div class="col-10">
 
@@ -368,9 +360,7 @@
                         {{ Form::submit('Add Comment', ['class' => 'btn btn-primary btn-block']) }}
                     </div>
                 </div>
-                {!! Form::close() !!}
-                <hr>
-            @endif
+                {!! Form::close() !!} @endif
             <div class="row">
                 <div class="d-flex justify-content-start">
                     <a id="next" class="btn btn-outline-primary" href="{{ url('/node') }}">Back</a>

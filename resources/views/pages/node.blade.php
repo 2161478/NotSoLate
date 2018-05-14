@@ -1,5 +1,4 @@
-@extends('layouts.with-navbar')
-@section('content')
+@extends('layouts.with-navbar') @section('content')
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div id="sidebar-wrapper" class="sidebar-toggle">
@@ -76,24 +75,25 @@
             </section>
             <hr>
             <div class="container">
-                <button id="references" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Reference</button>
-                    <div id="demo" class="collapse">
-                    <section >
-                        <li>Docs.oracle.com. (2018). Java Servlet Technology - The Java EE 5 Tutorial. [online] Available at:
-                https://docs.oracle.com/javaee/5/tutorial/doc/bnafd.html [Accessed 6 May 2018].<br/>
-                        <li>Docs.oracle.com.
-                (2018). What Is a Servlet? - The Java EE 5 Tutorial. [online] Available at:
-                https://docs.oracle.com/javaee/5/tutorial/doc/bnafe.html [Accessed 6 May 2018].<br/>
-                        <li>Wai Chan, S. and
-                Burns, E. (2017). Java™ Servlet Specification. [online] Javaee.github.io. Available at:
-                https://javaee.github.io/servlet-spec/downloads/servlet-4.0/servlet-4_0_FINAL.pdf [Accessed 6 May 2018].
-                    </div>
+                <button id="references" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">
+                    View Reference
+                </button>
+                <div id="demo" class="collapse">
+                    Docs.oracle.com. (2018). Java Servlet Technology - The Java EE 5 Tutorial. [online] Available at:
+                    https://docs.oracle.com/javaee/5/tutorial/doc/bnafd.html [Accessed 6 May 2018].<br/>
+                    Docs.oracle.com.
+                    (2018). What Is a Servlet? - The Java EE 5 Tutorial. [online] Available at:
+                    https://docs.oracle.com/javaee/5/tutorial/doc/bnafe.html [Accessed 6 May 2018].<br/>
+                    Wai Chan, S. and
+                    Burns, E. (2017). Java™ Servlet Specification. [online] Javaee.github.io. Available at:
+                    https://javaee.github.io/servlet-spec/downloads/servlet-4.0/servlet-4_0_FINAL.pdf [Accessed 6 May
+                    2018].
+                </div>
             </div>
-            <hr>
-            @if (Auth::user())
+            <hr> @if (Auth::user())
                 <div style="text-align:center">
                     <a style="text-align:center" href="{{asset('storage/NodeJSNotes.pdf')}}" class="pdfdownload"
-                       download="JavaNotes.pdf">Download topic PDF file</a>
+                       download="NodeJSNotes.pdf">Download topic PDF file</a>
                 </div>
                 <hr>
                 <div class="row">
@@ -123,9 +123,7 @@
                         </div>
                     </div>
                 </div>
-                {!! Form::open(['route' => ['comments.store', Request::path()], 'method' => 'POST']) !!}
-                {{ Form::text('name', Auth::user()->name, ['class' => 'd-none']) }}
-                {{ Form::label('comment', 'Comment') }}
+                {!! Form::open(['route' => ['comments.store', Request::path()], 'method' => 'POST']) !!} {{ Form::text('name', Auth::user()->name, ['class' => 'd-none']) }} {{ Form::label('comment', 'Comment') }}
                 <div class="row">
                     <div class="col-10">
 
@@ -134,15 +132,13 @@
                         {{ Form::submit('Add Comment', ['class' => 'btn btn-primary btn-block']) }}
                     </div>
                 </div>
-                {!! Form::close() !!}
-                <hr>
-            @endif
+                {!! Form::close() !!} @endif
             <div class="row">
                 <div class="d-flex justify-content-start">
-                    <a id="next" class="btn btn-outline-primary" href="/php">Back</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/php') }}">Back</a>
                 </div>
                 <div class="ml-auto justify-content-end">
-                    <a id="next" class="btn btn-outline-primary" href="/was">Next</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/was') }}">Next</a>
                 </div>
             </div>
         </div>

@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="quiz">
-                    <table class="table table-striped table-responsive">
+                    <table class="table table-striped">
                         <thead>
                         <tr>
                             <th>Quiz</th>
