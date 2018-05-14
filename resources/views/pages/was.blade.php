@@ -312,15 +312,17 @@
                 </p>
             </section>
             <hr>
-            <section id="references">
-                <h3>References</h3>
-                News, A. (2018). Jollibee takes down delivery website after gov't raises privacy concern. [online]
-                ABS-CBN News. Available at:
+            <div class="container">
+                <button id="references" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Reference</button>
+                    <div id="demo" class="collapse">
+                    <section >
+                        <li>ABS-CBN News. Available at:
                 http://news.abs-cbn.com/business/05/09/18/jollibee-takes-down-delivery-website-after-govt-raises-privacy-concern
-                [Accessed 11 May 2018].<br>
-                Owasp.org. (2018). Top 10-2017 Top 10 - OWASP. [online] Available at:
-                https://www.owasp.org/index.php/Top_10-2017_Top_10 [Accessed 11 May 2018].<br>
-            </section>
+                [Accessed 11 May 2018].<br/>
+                        <li>Owasp.org. (2018). Top 10-2017 Top 10 - OWASP. [online] Available at:
+                https://www.owasp.org/index.php/Top_10-2017_Top_10 [Accessed 11 May 2018]<br/>
+                    </div>
+                </div>
             <hr>
             @if (Auth::user())
                 <div style="text-align:center">
