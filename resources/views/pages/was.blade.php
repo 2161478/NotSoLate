@@ -303,6 +303,13 @@
                         that they would not harm users and the database.
                     </li>
                 </ul>
+                <b>Sample Case</b>
+                <p>
+                    One of the most famous cases of XSS is the Samy Worm created by Samy Kamkar for MySpace. Samy created
+                    a script that would force users who visited his profile to add him as a friend, and add “but most of
+                    all, Samy is my hero” under the “my heroes” category. He programmed the script such that it would
+                    copy itself to the visitors’ profile as well.
+                </p>
             </section>
             <hr>
             <section id="references">
@@ -363,10 +370,10 @@
             @endif
             <div class="row">
                 <div class="d-flex justify-content-start">
-                    <a id="next" class="btn btn-outline-primary" href="/node">Back</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/node') }}">Back</a>
                 </div>
                 <div class="ml-auto justify-content-end">
-                    <a id="next" class="btn btn-outline-primary" href="/">Home</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/') }}">Home</a>
                 </div>
             </div>
         </div>
