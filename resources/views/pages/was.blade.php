@@ -11,7 +11,7 @@
                     <li><a href="#bA">Broken Authentication</a></li>
                     <li><a href="#bb">Using Components with Known Vulnerabilities</a></li>
                     <li><a href="#bc">Insufficient Logging & Monitoring</a></li>
-                    <li><a href="xss">Cross-Site Scripting</a></li>
+                    <li><a href="#xss">Cross-Site Scripting</a></li>
                     <li><a href="#references">References</a></li>
                 </ul>
             </div>
@@ -88,15 +88,15 @@
                 <h4>Top 10 Open Web Application Security Project (OWASP) 2k17</h4>
                 <ul>
                     <li> A1 - Injection</li>
-                    <li><b> A2 – Broken Authentication and Session Management</b></li>
+                    <li><a href="#bA">A2 -Broken Authentication</a></li>
                     <li>A3 – 2017-Sensitive Data Exposure</li>
                     <li>A4 – XML External Entities (XXE)</li>
                     <li>A5 – Broken Access Control</li>
                     <li> A6 – Security Misconfiguration</li>
-                    <li><b>A7 – Cross-Site Scripting (XSS)</b></li>
+                    <li><a href="#xss">A7 –Cross-Site Scripting</a></li>
                     <li>A8 – Insecure Deserialization</li>
-                    <li><b>A9 – Using Components with Known Vulnerabilities</b></li>
-                    <li><b>A10 –Insufficient Logging & Monitoring</b></li>
+                    <li><a href="#bb">A9 –Using Components with Known Vulnerabilities</a></li>
+                    <li><a href="#bc">A10 –Insufficient Logging & Monitoring</a></li>
                 </ul>
                 <div class="jumbotron">
                     <strong>Note :</strong>
