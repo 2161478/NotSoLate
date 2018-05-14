@@ -26,7 +26,7 @@
             </section>
             <hr>
             <section id="sample-case">
-                <p>If you frequently order food through the website of <img src="{{asset('storage/img/jollibee.jpg')
+                <p>If you frequently order food through the website of <img src="{{asset('storage/img/jollibee.png')
                 }}" alt="Jollibee">, you’re probably disappointed to have seen the picture below when you opened their
                     website to order <img src="{{asset('storage/img/burger.png')}}" alt=""><img src="{{asset
                     ('storage/img/coke.jpg')}}" alt=""><img src="{{asset('storage/img/fries.png')}}" alt="">.</p>
@@ -37,7 +37,7 @@
                 <p>If you frequently order food from jollibeedelivery.com which the official website of Jollibee you’re
                     probably disappointed to have seen the picture below when you opened their website to order
                     food.</p>
-                <img src="{{ asset('storage/img/jolli.JPG') }}" class="img-fluid">
+                <img src="{{ asset('storage/img/jolli.JPG') }}" class="img-fluid d-block">
                 <br>
                 <i>Image by: ABS-CBN</i>
                 <br>
@@ -59,7 +59,7 @@
             </section>
             <hr>
             <section id="data-pri-act">
-                <img src="{{ asset('storage/img/dataprivacy.png') }}" class="img-fluid">
+                <img src="{{ asset('storage/img/dataprivacy.png') }}" class="img-fluid d-block">
                 <p class="m-5">The Data Privacy Act was enforced in order to ensure the presence of security in web
                     applications.
                 </p>

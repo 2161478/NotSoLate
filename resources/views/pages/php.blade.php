@@ -49,7 +49,7 @@
                 Example:
                 <pre>
 &lt;?php
-    Echo “Hello Webtech People!”;
+    echo “Hello Webtech People!”;
 &lt;/php&gt;
                     </pre>
                 <strong>Escaping from HTML</strong>
@@ -79,8 +79,8 @@
                 </p>
                 <table class="table table-striped table-responsive-md">
                     <thead>
-                    <td>Variable</td>
-                    <td>Uses</td>
+                    <td class="p-4">Variable</td>
+                    <td class="p-4">Uses</td>
                     </thead>
                     <tr>
                         <td><code>$GLOBAL</code></td>
@@ -526,7 +526,7 @@ function funcName($param1, $param2){
                         <td>
 								<pre>
 function incrementBy($num1, $incrementNum2=1){
-    $result = $num1 + $num22;
+    $result = $num1 + $num2;
     return $result;
 }
 
@@ -639,10 +639,10 @@ if(file_exists("dummy.txt")){
                 <br/> Example:
                 <pre>
 &lt;?php
-    // Starting session
-    session_start();
-    // Storing session data
-    $_SESSION["username"] = "user1";
+// Starting session
+session_start();
+// Storing session data
+$_SESSION["username"] = "user1";
 ??&gt;
                     </pre>
                 <p>
@@ -657,11 +657,11 @@ if(file_exists("dummy.txt")){
                 Example:
                 <pre>
 &lt;?php
-    // Starting session
-    session_start();
-    // Removing session data
-    if(isset($_SESSION["username"])){
-        unset($_SESSION["username"]);
+// Starting session
+session_start();
+// Removing session data
+if(isset($_SESSION["username"])){
+    unset($_SESSION["username"]);
 }
 ?&gt;
                 </pre>

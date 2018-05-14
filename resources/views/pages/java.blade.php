@@ -183,7 +183,7 @@
                             <li>HTTPServletResponse</li>
                         </ol>
                     </div>
-                    <div class="col-md-8"><img src="{{ asset('storage/img/http-servlet.png') }}" alt=""></div>
+                    <div class="col-md-8"><img src="{{ asset('storage/img/http-servlet.png') }}" class="img-fluid"alt=""></div>
                 </div>
                 <div>
                     <p>
