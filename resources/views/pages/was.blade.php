@@ -59,7 +59,7 @@
             </section>
             <hr>
             <section id="data-pri-act">
-                <img src="{{ asset('storage/img/dataprin.png') }}" class="img-fluid">
+                <img src="{{ asset('storage/img/dataprivacy.png') }}" class="img-fluid">
                 <p class="m-5">The Data Privacy Act was enforced in order to ensure the presence of security in web
                     applications.
                 </p>
@@ -360,6 +360,7 @@
                     </div>
                 </div>
                 {!! Form::close() !!}
+                <hr>
             @endif
             <div class="row">
                 <div class="d-flex justify-content-start">

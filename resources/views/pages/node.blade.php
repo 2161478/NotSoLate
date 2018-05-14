@@ -130,6 +130,7 @@
                     </div>
                 </div>
                 {!! Form::close() !!}
+                <hr>
             @endif
             <div class="row">
                 <div class="d-flex justify-content-start">
