@@ -10,6 +10,10 @@ class PagesController extends Controller
         $title = 'Home';
         return view('pages.index')-> with('title', $title);
     }
+    public function about(){
+        $title = 'About';
+        return view('pages.about')-> with('title', $title);
+    }
     public function profile() {
         $user = auth()->user()->id;
         $user = User::find($user);

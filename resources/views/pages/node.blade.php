@@ -75,15 +75,20 @@
                 </ol>
             </section>
             <hr>
-            <section id="references">
-                <h3>References</h3>
-                Docs.oracle.com. (2018). Java Servlet Technology - The Java EE 5 Tutorial. [online] Available at:
-                https://docs.oracle.com/javaee/5/tutorial/doc/bnafd.html [Accessed 6 May 2018].<br/> Docs.oracle.com.
+            <div class="container">
+                <button id="references" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Reference</button>
+                    <div id="demo" class="collapse">
+                    <section >
+                        <li>Docs.oracle.com. (2018). Java Servlet Technology - The Java EE 5 Tutorial. [online] Available at:
+                https://docs.oracle.com/javaee/5/tutorial/doc/bnafd.html [Accessed 6 May 2018].<br/>
+                        <li>Docs.oracle.com.
                 (2018). What Is a Servlet? - The Java EE 5 Tutorial. [online] Available at:
-                https://docs.oracle.com/javaee/5/tutorial/doc/bnafe.html [Accessed 6 May 2018].<br/> Wai Chan, S. and
+                https://docs.oracle.com/javaee/5/tutorial/doc/bnafe.html [Accessed 6 May 2018].<br/>
+                        <li>Wai Chan, S. and
                 Burns, E. (2017). Java™ Servlet Specification. [online] Javaee.github.io. Available at:
                 https://javaee.github.io/servlet-spec/downloads/servlet-4.0/servlet-4_0_FINAL.pdf [Accessed 6 May 2018].
-            </section>
+                    </div>
+            </div>
             <hr>
             @if (Auth::user())
                 <div style="text-align:center">
@@ -134,10 +139,10 @@
             @endif
             <div class="row">
                 <div class="d-flex justify-content-start">
-                    <a id="next" class="btn btn-outline-primary" href="{{ url('/php') }}">Back</a>
+                    <a id="next" class="btn btn-outline-primary" href="/php">Back</a>
                 </div>
                 <div class="ml-auto justify-content-end">
-                    <a id="next" class="btn btn-outline-primary" href="{{ url('/was') }}">Next</a>
+                    <a id="next" class="btn btn-outline-primary" href="/was">Next</a>
                 </div>
             </div>
         </div>

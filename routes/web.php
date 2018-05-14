@@ -17,6 +17,7 @@ ROUTE::get('/java', 'PagesController@java')->name('java');
 ROUTE::get('/php', 'PagesController@php')->name('php');
 ROUTE::get('/node', 'PagesController@node')->name('node');
 ROUTE::get('/was', 'PagesController@was')->name('was');
+Route::get('/about', 'PagesController@about')->name('about');
 Auth::routes();
 Route::resource('quizzes', 'QuizController');
 Route::resource('quizzesTaken', 'QuizzesTakenController');
