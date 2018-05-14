@@ -1,0 +1,96 @@
+
+{
+  "title": "Web Application Security Quiz",
+  "questions": [
+    {
+      "text": "Which food corporation recently had to shut down their website for vulnerabilities?",
+      "type": "mc",
+      "answer": "Jollibee",
+      "answers": [
+        "McDonalds",
+        "Wendy's",
+        "Jollibee"
+      ]
+    },
+    {
+      "text": "Which of the following vulnerabilities was found in the website?",
+      "type": "mc",
+      "answer": "Unencrypted Information",
+      "answers": [
+        "Unencrypted Information",
+        "Non-updated protection software",
+        "Using external components"
+      ]
+    },
+    {
+      "text": "The Philippines implemented this in 2012.",
+      "type": "mc",
+      "answer": "Data Privacy Act",
+      "answers": [
+        "Data Protection Act",
+        "Data Privacy Act",
+        "Data Prudence Act"
+      ]
+    },
+    {
+      "text": "The previous was implemented by the national privacy commission.",
+      "type": "tf",
+      "answer": "t"
+    },
+    {
+      "text": "Infection, cross-site scripting, and broken authentication are the top 3 security risks of OWASP 2017.",
+      "type": "tf",
+      "answer": "f"
+    },
+    {
+      "text": "Broken authentication is when hackers use __________ account credentials.",
+      "type": "mc",
+      "answer": "compromised",
+      "answers": [
+        "authentic",
+        "stolen",
+        "compromised"
+      ]
+    },
+    {
+      "text": "To mitigate this, proper management of dependencies and libraries are required.",
+      "type": "mc",
+      "answer": "Using components with known vulnerabilities",
+      "answers": [
+        "Insufficient logging and monitoring",
+        "Using components with known vulnerabilities",
+        "Broken authentication"
+      ]
+    },
+    {
+      "text": "This can happen when session IDs are embedded in URLs.",
+      "type": "mc",
+      "answer": "Broken Authentication",
+      "answers": [
+        "Broken Authentication",
+        "Cross-site scripting",
+        "Using components with known vulnerabilities"
+      ]
+    },
+    {
+      "text": "This happens when the attacker redirects links to malicious scripts.",
+      "type": "mc",
+      "answer": "cross-site scripting",
+      "answers": [
+        "injection",
+        "insufficient logging and monitoring",
+        "cross-site scripting"
+      ]
+    },
+    {
+      "text": "A wordpress website was taken over and controlled due to this vulnerability.",
+      "type": "mc",
+      "answer": "Using components with known vulnerabilities",
+      "answers": [
+        "Using components with known vulnerabilities",
+        "broken authentication",
+        "injection"
+      ]
+    }
+  ]
+}
