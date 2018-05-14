@@ -11,7 +11,7 @@
                     <li><a href="#bA">Broken Authentication</a></li>
                     <li><a href="#bb">Using Components with Known Vulnerabilities</a></li>
                     <li><a href="#bc">Insufficient Logging & Monitoring</a></li>
-                    <li><a href="xss">Cross-Site Scripting</a></li>
+                    <li><a href="#xss">Cross-Site Scripting</a></li>
                     <li><a href="#references">References</a></li>
                 </ul>
             </div>
@@ -26,7 +26,7 @@
             </section>
             <hr>
             <section id="sample-case">
-                <p>If you frequently order food through the website of <img src="{{asset('storage/img/jollibee.jpg')
+                <p>If you frequently order food through the website of <img src="{{asset('storage/img/jollibee.png')
                 }}" alt="Jollibee">, you’re probably disappointed to have seen the picture below when you opened their
                     website to order <img src="{{asset('storage/img/burger.png')}}" alt=""><img src="{{asset
                     ('storage/img/coke.jpg')}}" alt=""><img src="{{asset('storage/img/fries.png')}}" alt="">.</p>
@@ -37,7 +37,7 @@
                 <p>If you frequently order food from jollibeedelivery.com which the official website of Jollibee you’re
                     probably disappointed to have seen the picture below when you opened their website to order
                     food.</p>
-                <img src="{{ asset('storage/img/jolli.JPG') }}" class="img-fluid">
+                <img src="{{ asset('storage/img/jolli.JPG') }}" class="img-fluid d-block">
                 <br>
                 <i>Image by: ABS-CBN</i>
                 <br>
@@ -59,7 +59,7 @@
             </section>
             <hr>
             <section id="data-pri-act">
-                <img src="{{ asset('storage/img/dataprin.png') }}" class="img-fluid">
+                <img src="{{ asset('storage/img/dataprivacy.png') }}" class="img-fluid d-block">
                 <p class="m-5">The Data Privacy Act was enforced in order to ensure the presence of security in web
                     applications.
                 </p>
@@ -88,15 +88,15 @@
                 <h4>Top 10 Open Web Application Security Project (OWASP) 2k17</h4>
                 <ul>
                     <li> A1 - Injection</li>
-                    <li><b> A2 – Broken Authentication and Session Management</b></li>
+                    <li><a href="#bA">A2 -Broken Authentication</a></li>
                     <li>A3 – 2017-Sensitive Data Exposure</li>
                     <li>A4 – XML External Entities (XXE)</li>
                     <li>A5 – Broken Access Control</li>
                     <li> A6 – Security Misconfiguration</li>
-                    <li><b>A7 – Cross-Site Scripting (XSS)</b></li>
+                    <li><a href="#xss">A7 –Cross-Site Scripting</a></li>
                     <li>A8 – Insecure Deserialization</li>
-                    <li><b>A9 – Using Components with Known Vulnerabilities</b></li>
-                    <li><b>A10 –Insufficient Logging & Monitoring</b></li>
+                    <li><a href="#bb">A9 –Using Components with Known Vulnerabilities</a></li>
+                    <li><a href="#bc">A10 –Insufficient Logging & Monitoring</a></li>
                 </ul>
                 <div class="jumbotron">
                     <strong>Note :</strong>
@@ -367,6 +367,7 @@
                     </div>
                 </div>
                 {!! Form::close() !!}
+                <hr>
             @endif
             <div class="row">
                 <div class="d-flex justify-content-start">

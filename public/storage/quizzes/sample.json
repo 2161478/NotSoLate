@@ -1,0 +1,145 @@
+{
+  "title": "Finals Quiz",
+  "questions": [
+    {
+      "text": "What does SSWS mean?",
+      "type": "mc",
+      "answer": "Server-Side Web Scripting",
+      "answers": [
+        "Server Side Web Scripting",
+        "Server-Side Web Scripting",
+        "Server Side Web Scripts"
+      ]
+    },
+    {
+      "text": "Java EE's Scripts",
+      "type": "mc",
+      "answer": "Enterprise Applications",
+      "answers": [
+        "Enterprise Applications",
+        "Game Development",
+        "Web Development"
+      ]
+    },
+    {
+      "text": "Method used in the request handling of Java Servlet",
+      "type": "mc",
+      "answer": "service() method",
+      "answers": [
+        "service() method",
+        "constructor call",
+        "init() method"
+      ]
+    },
+    {
+      "text": "Latest Version of Java EE",
+      "type": "mc",
+      "answer": "Java EE8",
+      "answers": [
+        "Java EE7",
+        "Java EE8",
+        "Java EE9"
+      ]
+    },
+    {
+      "text": "Scripts,Operations and Applications executed in the web server itself",
+      "type": "mc",
+      "answer": "Server-side Technologies",
+      "answers": [
+        "Internal Server Applications",
+        "Server-side Technologies",
+        "Server-side Programs"
+      ]
+    },
+    {
+      "text": "Developer of PHP",
+      "type": "mc",
+      "answer": "Rasmus Lerdorf",
+      "answers": [
+        "Dennis Ritchie",
+        "Guido Van Rossum",
+        "Rasmus Lerdorf"
+      ]
+    },
+    {
+      "text": "Not a paradigm of PHP",
+      "type": "mc",
+      "answer": "Declarative",
+      "answers": [
+        "Object Oriented",
+        "Declarative",
+        "Procedural"
+      ]
+    },
+    {
+      "text": "Hosted in a web container",
+      "type": "mc",
+      "answer": "HTTP Servlets",
+      "answers": [
+        "Java Servlets",
+        "Server-side Technologies",
+        "HTTP Servlets"
+      ]
+    },
+    {
+      "text": "Not an argument requirement of the doXX call",
+      "type": "mc",
+      "answer": "HTTPServletMessage",
+      "answers": [
+        "HTTPServletMessage",
+        "HTTPServletRequest",
+        "HTTPServletResponse"
+      ]
+    },
+    {
+      "text": "The method invked before the servelet instance is unloaded",
+      "type": "mc",
+      "answer": "destroy() method",
+      "answers": [
+        "destroy() method",
+        "init() method",
+        "service() method"
+      ]
+    },
+    {
+      "text": "Original name of PHP",
+      "type": "mc",
+      "answer": "Personal HomePage",
+      "answers": [
+        "Personal Hypertext Preprocessor",
+        "Personal Homepage",
+        "Personal Home Processor"
+      ]
+    },
+    {
+      "text": "PHP allows 2 ways of coding: Object Oriented and Functional Paradigm",
+      "type": "tf",
+      "answer": "t"
+    },
+    {
+      "text": "Which one is not a built-in superglobal variable in php?",
+      "type": "mc",
+      "answer": "$_HTTP",
+      "answers": [
+        "$_COOKIE",
+        "$_SERVER",
+        "$_HTTP"
+      ]
+    },
+    {
+      "text": "This is an example of a PHP code: <?php while ($i <= 5) {$i++; echo $i;}?>",
+      "type": "tf",
+      "answer": "f"
+    },
+    {
+      "text": "What is Google Chrome's JS engine also known as",
+      "type": "mc",
+      "answer": "V8 engine",
+      "answers": [
+        "V5 engin",
+        "V8 engine",
+        "VC engine"
+      ]
+    }
+  ]
+}
