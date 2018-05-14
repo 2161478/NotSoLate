@@ -11,7 +11,7 @@
                     <li><a href="#bA">Broken Authentication</a></li>
                     <li><a href="#bb">Using Components with Known Vulnerabilities</a></li>
                     <li><a href="#bc">Insufficient Logging & Monitoring</a></li>
-                    <li><a href="xss">Cross-Site Scripting</a></li>
+                    <li><a href="#xss">Cross-Site Scripting</a></li>
                     <li><a href="#references">References</a></li>
                 </ul>
             </div>
@@ -88,15 +88,15 @@
                 <h4>Top 10 Open Web Application Security Project (OWASP) 2k17</h4>
                 <ul>
                     <li> A1 - Injection</li>
-                    <li><b> A2 – Broken Authentication and Session Management</b></li>
+                    <li><a href="#bA">A2 -Broken Authentication</a></li>
                     <li>A3 – 2017-Sensitive Data Exposure</li>
                     <li>A4 – XML External Entities (XXE)</li>
                     <li>A5 – Broken Access Control</li>
                     <li> A6 – Security Misconfiguration</li>
-                    <li><b>A7 – Cross-Site Scripting (XSS)</b></li>
+                    <li><a href="#xss">A7 –Cross-Site Scripting</a></li>
                     <li>A8 – Insecure Deserialization</li>
-                    <li><b>A9 – Using Components with Known Vulnerabilities</b></li>
-                    <li><b>A10 –Insufficient Logging & Monitoring</b></li>
+                    <li><a href="#bb">A9 –Using Components with Known Vulnerabilities</a></li>
+                    <li><a href="#bc">A10 –Insufficient Logging & Monitoring</a></li>
                 </ul>
                 <div class="jumbotron">
                     <strong>Note :</strong>
@@ -303,6 +303,13 @@
                         that they would not harm users and the database.
                     </li>
                 </ul>
+                <b>Sample Case</b>
+                <p>
+                    One of the most famous cases of XSS is the Samy Worm created by Samy Kamkar for MySpace. Samy created
+                    a script that would force users who visited his profile to add him as a friend, and add “but most of
+                    all, Samy is my hero” under the “my heroes” category. He programmed the script such that it would
+                    copy itself to the visitors’ profile as well.
+                </p>
             </section>
             <hr>
             <section id="references">
@@ -317,8 +324,8 @@
             <hr>
             @if (Auth::user())
                 <div style="text-align:center">
-                    <a style="text-align:center" href="{{asset('storage/JavaNotes.pdf')}}" class="pdfdownload"
-                       download="JavaNotes.pdf">Download topic PDF file</a>
+                    <a style="text-align:center" href="{{asset('storage/WASNotes.pdf')}}" class="pdfdownload"
+                       download="WASNotes.pdf">Download topic PDF file</a>
                 </div>
                 <hr>
                 <div class="row">
@@ -364,10 +371,10 @@
             @endif
             <div class="row">
                 <div class="d-flex justify-content-start">
-                    <a id="next" class="btn btn-outline-primary" href="/node">Back</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/node') }}">Back</a>
                 </div>
                 <div class="ml-auto justify-content-end">
-                    <a id="next" class="btn btn-outline-primary" href="/">Home</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/') }}">Home</a>
                 </div>
             </div>
         </div>

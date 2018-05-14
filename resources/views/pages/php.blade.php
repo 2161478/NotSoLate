@@ -753,10 +753,10 @@ session_destroy();
             @endif
             <div class="row">
                 <div class="d-flex justify-content-start">
-                    <a id="next" class="btn btn-outline-primary" href="/java">Back</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/java') }}">Back</a>
                 </div>
                 <div class="ml-auto justify-content-end">
-                    <a id="next" class="btn btn-outline-primary" href="/node">Next</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/node') }}">Next</a>
                 </div>
             </div>
         </div>

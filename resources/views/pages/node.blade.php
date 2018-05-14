@@ -134,10 +134,10 @@
             @endif
             <div class="row">
                 <div class="d-flex justify-content-start">
-                    <a id="next" class="btn btn-outline-primary" href="/php">Back</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/php') }}">Back</a>
                 </div>
                 <div class="ml-auto justify-content-end">
-                    <a id="next" class="btn btn-outline-primary" href="/was">Next</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{ url('/was') }}">Next</a>
                 </div>
             </div>
         </div>
