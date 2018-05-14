@@ -13,7 +13,7 @@ class QuizTaken extends Model
     public $primaryKey = 'id';
 
     public $timestamps = true;
-
+    // identify relationship of user and quiztaken
     public function user(){
         return $this->belongsTo('App\user');
     }

@@ -25,10 +25,11 @@
                     <button type="submit" class="btn btn-info btn-block submit">
                         {{ __('Login') }}
                     </button>
-
+                <!--
                     <a class="btn btn-link" href="{{ route('password.request') }}">
                         {{ __('Forgot Your Password?') }}
                     </a>
+                    -->
                     <br><br>
                     <span>Don't have an account?</span>
                     <a class="btn btn-link" href="{{ route('register') }}">Register Here.</a>
