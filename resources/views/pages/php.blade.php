@@ -685,24 +685,29 @@ session_destroy();
                 </pre>
             </section>
             <hr>
-            <section id="references">
-                <h3>References</h3>
-                MDN Web Docs. (2018). HTTP cookies. [online] Available at:
-                https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies [Accessed 11 May 2018].<br> Morris, J. (2018).
-                How to Build a PHP Login Form Using Sessions - John Morris. [online] John Morris. Available at:
+            <div class="container">
+                <button id="references" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Reference</button>
+                    <div id="demo" class="collapse">
+                    
+                <li>MDN Web Docs. (2018). HTTP cookies. [online] Available at:
+                https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies [Accessed 11 May 2018].<br> 
+                <li>Morris, J. (2018).How to Build a PHP Login Form Using Sessions - John Morris. [online] John Morris. Available at:
                 https://www.johnmorrisonline.com/build-php-login-form-using-sessions/ [Accessed 11 May 2018].<br>
-                Php.net. (2018). PHP: Introduction - Manual. [online] Available at:
-                http://php.net/manual/en/intro.session.php [Accessed 11 May 2018].<br> Tutorialrepublic.com. (2018). How
-                to Create, Access and Destroy Sessions in PHP - Tutorial Republic. [online] Available at:
+                <li>Php.net. (2018). PHP: Introduction - Manual. [online] Available at:
+                http://php.net/manual/en/intro.session.php [Accessed 11 May 2018].<br> 
+                <li>Tutorialrepublic.com. (2018). How to Create, Access and Destroy Sessions in PHP - Tutorial Republic. [online] Available at:
                 https://www.tutorialrepublic.com/php-tutorial/php-sessions.php [Accessed 11 May 2018].<br>
-                Tutorialrepublic.com. (2018). PHP If, Else and Elseif Conditional Statements - Tutorial Republic.
+                <li>Tutorialrepublic.com. (2018). PHP If, Else and Elseif Conditional Statements - Tutorial Republic.
                 [online] Available at: https://www.tutorialrepublic.com/php-tutorial/php-if-else-statements.php
-                [Accessed 11 May 2018]. <br> Tutorialrepublic.com. (2018). PHP Switch Case Conditional Statements -
-                Tutorial Republic. [online] Available at:
+                [Accessed 11 May 2018]. <br> 
+                <li>Tutorialrepublic.com. (2018). PHP Switch Case Conditional Statements -
+               Tutorial Republic. [online] Available at:
                 https://www.tutorialrepublic.com/php-tutorial/php-switch-case-statements.php [Accessed 11 May 2018].<br>
-                Tutorialrepublic.com. (2018). PHP While, Do-While, For and Foreach Loops - Tutorial Republic. [online]
+                <li>Tutorialrepublic.com. (2018). PHP While, Do-While, For and Foreach Loops - Tutorial Republic. [online]
                 Available at: https://www.tutorialrepublic.com/php-tutorial/php-loops.php [Accessed 11 May 2018].<br>
-            </section>
+            
+                    </div>
+                </div>
             <hr>
             @if (Auth::user())
                 <div style="text-align:center">
@@ -753,10 +758,10 @@ session_destroy();
             @endif
             <div class="row">
                 <div class="d-flex justify-content-start">
-                    <a id="next" class="btn btn-outline-primary" href="{{ url('/java') }}">Back</a>
+                    <a id="next" class="btn btn-outline-primary" href="/java">Back</a>
                 </div>
                 <div class="ml-auto justify-content-end">
-                    <a id="next" class="btn btn-outline-primary" href="{{ url('/node') }}">Next</a>
+                    <a id="next" class="btn btn-outline-primary" href="/node">Next</a>
                 </div>
             </div>
         </div>
